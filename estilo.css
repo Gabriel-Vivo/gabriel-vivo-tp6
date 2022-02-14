@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+
+  background-color: chocolate;
+  font-size: 24px;
+  
+}
+
+footer{
+  background-color: chocolate;
+}
+
+main{
+
+  height: 600px;
+
+}
+.banner img {
+
+  width: 100%;
+}
+
+.banner {
+
+  width: 600px;
+}
+
+
+
+.logo img {
+
+  width: 100%;
+
+}
+
+.logo {
+
+  width: 150px;
+}
+
+
+.imagen-footer img {
+
+  width: 100%;
+}
+
+.imagen-footer {
+
+  width: 150px;
+}
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+nav ul {
+
+gap: 6rem;
+list-style-type: none;
+margin-right: 6rem;
+}
+li{
+  color: brown;
+
+}
+
+h2{
+  color: brown;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.sucursal ul {
+
+  
+ list-style-type: none;
+}
+
+.sucursal {
+
+  text-align: center;
+}
+
+
+
+
+
+#cajaFlex,
+ nav ul, 
+ header,
+ main,
+ .flex-1 {
+
+  display: flex;
+  
+}
+
+#cajaFlex{
+  flex-direction: column;
+}
+
+
+main {
+
+  
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header {
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-1 {
+
+  justify-content: space-around;
+ align-items: center;
+}
+
+
+.imagen-footer{
+width: 100px;
+margin-left: 0;
+animation-name: girar;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes girar {
+
+0% {
+
+transform: rotate(72deg);
+
+}
+
+25%{
+ transform: rotate(144deg);
+
+}
+
+50%{
+
+transform: rotate(216deg);
+
+}
+75% {
+
+transform: rotate(288deg);
+
+}
+100%{
+
+transform: rotate(360deg);
+
+
+}
+
+}
+
+
+
+
+
+/*PAGINA CONTACTOS*/
+
+.formulario {
+
+  background-color: cadetblue;
+  border: 3px solid brown;
+  width: 900px;
+}
+
+
+/* PAGINA BEBIDAS */
+
+
+#contenedor img{
+
+  width: 100px;
+}
+ #contenedor img:hover {
+
+  transform: scale(2,2);
+
+ }
+
+#contenedor,
+h3,
+p {
+  background-color: rgba(255, 255, 255, 0.734);
+}
+
+button {
+  margin-top: 2rem;
+}
+
+
+#contenedor {
+
+
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto ;
+  text-align: center;
+  background-image: url("fondos gaseosas/fondo1.jpg");
+  background-size: cover;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+
+/* PAGINA HAMBURGUESA */
+
+
+.fotos img {
+  width: 150px;
+}
+
+.fotos img:hover{
+
+  transform: scale(2,2);
+  margin-bottom: 3rem;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.fotos p {
+  border: 1px solid brown;
+}
+
+
+/* PAGINA UBICACION */
+
+
+.ubicacionFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
