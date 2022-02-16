@@ -5,22 +5,55 @@
   margin: 0;
 }
 
-header {
-
+header{
   background-color: chocolate;
+}
+.container-fluid{
+
+  background-color: chocolate !important;
+  
   font-size: 24px;
   
+
 }
 
-footer{
-  background-color: chocolate;
+.container-fluid img {
+
+  width: 150px;
 }
 
-main{
+
+.collapse{
+
+  justify-content:flex-end !important;
+  
+}
+a{
+  color: brown !important;
+}
+
+.navbar-nav{
+
+  gap: 30px;
+
+}
+
+
+
+/*main{
 
   height: 600px;
 
+}*/
+
+.main-index{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
+
+
+
 .banner img {
 
   width: 100%;
@@ -31,17 +64,14 @@ main{
   width: 600px;
 }
 
-
-
-.logo img {
-
-  width: 100%;
-
+.video {
+  width: 600px;
+  height: 300px;
+  border: 5px solid chocolate;
 }
 
-.logo {
-
-  width: 150px;
+footer{
+  background-color: chocolate;
 }
 
 
@@ -54,17 +84,17 @@ main{
 
   width: 150px;
 }
-a {
+/*a {
   text-decoration: none;
   color: brown;
-}
+}*/
 
-nav ul {
+ /*nav ul {
 
 gap: 6rem;
 list-style-type: none;
 margin-right: 6rem;
-}
+}*/
 li{
   color: brown;
 
@@ -92,9 +122,6 @@ h2{
 
 
 #cajaFlex,
- nav ul, 
- header,
- main,
  .flex-1 {
 
   display: flex;
@@ -113,11 +140,7 @@ main {
   justify-content: space-evenly;
 }
 
-header {
 
-  align-items: center;
-  justify-content: space-between;
-}
 
 .flex-1 {
 
@@ -173,11 +196,13 @@ transform: rotate(360deg);
 
 /*PAGINA CONTACTOS*/
 
-.formulario {
+.contacto {
 
-  background-color: cadetblue;
-  border: 3px solid brown;
-  width: 900px;
+ 
+  border: 3px solid black;
+  background-color:rgb(165, 91, 38);
+  margin: 3rem;
+
 }
 
 
@@ -230,8 +255,9 @@ button {
 
 .fotos img:hover{
 
-  transform: scale(2,2);
-  margin-bottom: 3rem;
+  transform: scale(1,1);
+  margin: 1rem;
+  
 }
 
 .fotos {
@@ -247,6 +273,12 @@ button {
 
 .fotos p {
   border: 1px solid brown;
+}
+
+.fotos h3 {
+
+  margin-top: 1rem;
+
 }
 
 
@@ -266,10 +298,8 @@ button {
 @media  screen and (max-width: 420px){
 
   #cajaFlex,
-  nav ul, 
-  header,
-  main,
-  .flex-1 {
+  .main-index,
+ .flex-1 {
  
    display: flex;
    flex-direction: column;
@@ -277,32 +307,38 @@ button {
    
  }
 
-nav ul {
+ /*nav ul {
   margin-left: 5rem;
   gap: 1rem;
   flex-direction: row;
   
-}
+}*/
 
-header {
+ /*header {
   width: 100%;
   font-size: 16px;
   align-items: center;
   justify-content: center;
 }
- 
-.logo {
+ */
+/*.logo {
   width: 85px;
-}
+}*/
 
 .banner {
-width: 300px;
+width: 250px;
 
+}
+.video {
+
+    width: 250px;
+    height: 250px;
 }
 
 .flex-1 {
 
   flex-direction: row;
+  margin-top: 2rem;
 }
 .imagen-footer {
 
@@ -351,19 +387,11 @@ width: 300px;
   }
   .informacion {
 margin-top: 2rem;
-
-  }
-
-/*pagina contacto */
-
-
-.texto {
-  width: 400px;
 }
 
-.formulario {
-
-  width: 400px;
+/*PAGINA CONTACTO*/
+.contacto {
+   margin-top: 0rem;
 }
 
 }
