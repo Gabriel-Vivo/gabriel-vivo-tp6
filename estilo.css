@@ -5,40 +5,29 @@
   margin: 0;
 }
 
-header{
+header {
   background-color: chocolate;
 }
-.container-fluid{
-
+.container-fluid {
   background-color: chocolate !important;
-  
-  font-size: 24px;
-  
 
+  font-size: 24px;
 }
 
 .container-fluid img {
-
   width: 150px;
 }
 
-
-.collapse{
-
-  justify-content:flex-end !important;
-  
+.collapse {
+  justify-content: flex-end !important;
 }
-a{
+a {
   color: brown !important;
 }
 
-.navbar-nav{
-
+.navbar-nav {
   gap: 30px;
-
 }
-
-
 
 /*main{
 
@@ -46,21 +35,17 @@ a{
 
 }*/
 
-.main-index{
-    display: flex;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.main-index {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-
-
 .banner img {
-
   width: 100%;
 }
 
 .banner {
-
   width: 600px;
 }
 
@@ -70,18 +55,15 @@ a{
   border: 5px solid chocolate;
 }
 
-footer{
+footer {
   background-color: chocolate;
 }
 
-
 .imagen-footer img {
-
   width: 100%;
 }
 
 .imagen-footer {
-
   width: 150px;
 }
 /*a {
@@ -89,135 +71,103 @@ footer{
   color: brown;
 }*/
 
- /*nav ul {
+/*nav ul {
 
 gap: 6rem;
 list-style-type: none;
 margin-right: 6rem;
 }*/
-li{
+li {
   color: brown;
-
 }
 
-h2{
+h2 {
   color: brown;
   border: 2px solid;
   border-radius: 15px;
 }
 
 .sucursal ul {
-
-  
- list-style-type: none;
+  list-style-type: none;
 }
 
 .sucursal {
-
   text-align: center;
+  margin-top: 1rem;
 }
-
-
-
-
 
 #cajaFlex,
- .flex-1 {
-
+.flex-1 {
   display: flex;
-  
 }
 
-#cajaFlex{
+#cajaFlex {
   flex-direction: column;
 }
 
-
 main {
-
-  
   align-items: center;
   justify-content: space-evenly;
 }
 
-
-
 .flex-1 {
-
   justify-content: space-around;
- align-items: center;
+  align-items: center;
+  text-align: center;
 }
 
-
-.imagen-footer{
-width: 100px;
-margin-left: 0;
-animation-name: girar;
-animation-duration: 3s;
-animation-iteration-count: infinite;
-
+.imagen-footer {
+  width: 100px;
+  margin-left: 0;
+  animation-name: girar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes girar {
+  0% {
+    transform: rotate(72deg);
+  }
 
-0% {
+  25% {
+    transform: rotate(144deg);
+  }
 
-transform: rotate(72deg);
-
+  50% {
+    transform: rotate(216deg);
+  }
+  75% {
+    transform: rotate(288deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-25%{
- transform: rotate(144deg);
-
-}
-
-50%{
-
-transform: rotate(216deg);
-
-}
-75% {
-
-transform: rotate(288deg);
-
-}
-100%{
-
-transform: rotate(360deg);
-
-
-}
-
-}
-
-
-
-
 
 /*PAGINA CONTACTOS*/
 
 .contacto {
-
- 
   border: 3px solid black;
-  background-color:rgb(165, 91, 38);
-  margin: 3rem;
-
+  width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: gainsboro;
 }
 
+#centrarFormulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /* PAGINA BEBIDAS */
 
-
-#contenedor img{
-
+#contenedor img {
   width: 100px;
 }
- #contenedor img:hover {
-
-  transform: scale(2,2);
-
- }
+#contenedor img:hover {
+  transform: scale(1.2, 1.2);
+}
 
 #contenedor,
 h3,
@@ -226,38 +176,30 @@ p {
 }
 
 button {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
-
 #contenedor {
-
-
   display: grid;
-  grid-template-columns: auto auto auto ;
-  grid-template-rows: auto auto ;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
   text-align: center;
   background-image: url("fondos gaseosas/fondo1.jpg");
   background-size: cover;
   align-items: center;
   justify-content: space-evenly;
-
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-
-
 /* PAGINA HAMBURGUESA */
-
 
 .fotos img {
   width: 150px;
 }
 
-.fotos img:hover{
-
-  transform: scale(1,1);
-  margin: 1rem;
-  
+.fotos img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .fotos {
@@ -276,95 +218,93 @@ button {
 }
 
 .fotos h3 {
-
   margin-top: 1rem;
-
 }
 
-
 /* PAGINA UBICACION */
-
 
 .ubicacionFlex {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-
-
-
-@media  screen and (max-width: 420px){
-
+@media screen and (max-width: 420px) {
   #cajaFlex,
   .main-index,
- .flex-1 {
- 
-   display: flex;
-   flex-direction: column;
-   
-   
- }
+  .flex-1 {
+    display: flex;
+    flex-direction: column;
+  }
 
- /*nav ul {
+  /*nav ul {
   margin-left: 5rem;
   gap: 1rem;
   flex-direction: row;
   
 }*/
 
- /*header {
+  /*header {
   width: 100%;
   font-size: 16px;
   align-items: center;
   justify-content: center;
 }
  */
-/*.logo {
+  /*.logo {
   width: 85px;
 }*/
 
-.banner {
-width: 250px;
-
-}
-.video {
-
+  .banner {
+    width: 250px;
+  }
+  .video {
     width: 250px;
     height: 250px;
-}
-
-.flex-1 {
-
-  flex-direction: row;
-  margin-top: 2rem;
-}
-.imagen-footer {
-
-  display: none;
-}
-
-
-/*PAGINA HAMBURGUESA */
-
-
-.fotos img {
-  width: 75px;
-}
-
-.fotos {
-
-  grid-template-columns:  auto;
-  grid-template-rows: repeat(6, auto);
-  row-gap: 1px;
-    
   }
 
-  .foto__1{
+  .imagen-footer {
     display: none;
   }
-  .foto__2{
+
+  .sucursal {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  /*PAGINA BEBIDAS */
+
+  #contenedor {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    margin-top: 12px;
+  }
+
+  /*PAGINA HAMBURGUESA */
+
+  .fotos img {
+    width: 150px;
+  }
+
+  .fotos {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 1px;
+  }
+
+  .foto__1 {
+    display: none;
+  }
+  .foto__2 {
     display: none;
   }
   .foto__3 {
@@ -381,17 +321,17 @@ width: 250px;
   }
 
   .mapa {
-
-    width: 400px;
+    width: 100%;
     height: 230px;
   }
   .informacion {
-margin-top: 2rem;
-}
+    margin-top: 2rem;
+  }
 
-/*PAGINA CONTACTO*/
-.contacto {
-   margin-top: 0rem;
-}
-
+  /*PAGINA CONTACTO*/
+  .contacto {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 300px;
+  }
 }
