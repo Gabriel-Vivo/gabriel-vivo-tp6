@@ -8,7 +8,8 @@ body {
 }
 
 header {
-  background-color: black;
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
   width: 100%;
 }
 
@@ -31,7 +32,8 @@ header .container-fluid .collapse .navbar-nav {
 }
 
 header .container-fluid .collapse .navbar-nav a {
-  color: whitesmoke !important;
+  color: white;
+  font-size: 24px;
 }
 
 main {
@@ -59,10 +61,12 @@ main {
 .main-index iframe {
   width: 450px;
   height: 250px;
+  border: 6px solid black;
 }
 
 footer {
-  background-color: black;
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
 }
 
 footer .flex-1 {
@@ -83,9 +87,10 @@ footer .flex-1 .sucursal {
 }
 
 footer .flex-1 .sucursal h2 {
-  color: white;
+  color: red;
   border: 2px solid;
   border-radius: 15px;
+  margin-left: 3rem;
 }
 
 footer .flex-1 .sucursal ul {
@@ -94,6 +99,7 @@ footer .flex-1 .sucursal ul {
 
 footer .flex-1 .sucursal ul li {
   color: white;
+  font-size: 24px;
 }
 
 footer .flex-1 .imagen-footer {

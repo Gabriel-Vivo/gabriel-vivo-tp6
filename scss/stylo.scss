@@ -1,15 +1,27 @@
 @import "variable";
 
+// INCLUYENDO MIXIN //
+
+@mixin bodyyy($colorLetra, $tamanoTexto) {
+  color: $colorTexto;
+  font-size: $tamanoTexto;
+}
+
+// FIN DEL MIXIN //
+
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: $colorMain;
+  background-color: $colorMain; // APLICANDO VARIABLES //
 }
 
 header {
-  background-color: $col-header-footer;
+  //background-color: $col-header-footer;
+
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
   width: 100%;
   .container-fluid {
     font-size: 24px;
@@ -23,7 +35,8 @@ header {
       .navbar-nav {
         gap: 30px;
         a {
-          color: whitesmoke !important;
+          //color: whitesmoke !important;
+          @include bodyyy($colorTexto, 24px); //APLICANDO MIXIN
         }
       }
     }
@@ -31,7 +44,7 @@ header {
 }
 
 main {
-  background-color: $colorMain;
+  background-color: map-get($mapacolores , 1 )                             //$colorMain; // APLICANDO VARIABLE //
 }
 
 .main-index {
@@ -50,11 +63,15 @@ main {
   iframe {
     width: 450px;
     height: 250px;
+    border: $bordes; //APLICANDO VARIABLE  //
   }
 }
 
 footer {
-  background-color: $col-header-footer;
+  // background-color: $col-header-footer;
+
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
   .flex-1 {
     display: flex;
     justify-content: space-around;
@@ -64,14 +81,16 @@ footer {
       text-align: center;
       margin-top: 1rem;
       h2 {
-        color: white;
+        color: map-get($mapacolores, 2); //aplicando map-get//
         border: 2px solid;
         border-radius: 15px;
+        margin-left: 3rem;
       }
       ul {
         list-style-type: none;
         li {
-          color: white;
+          @include bodyyy($colorTexto, 24px) //aplicando mixin //
+;
         }
       }
     }
@@ -114,20 +133,17 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .main-index{
-
+  .main-index {
     margin-right: 150px;
 
     .banner {
       img {
-
-          
         width: 250px;
         margin-bottom: 35px;
       }
     }
 
-    iframe{
+    iframe {
       width: 225px;
       height: 125px;
     }
