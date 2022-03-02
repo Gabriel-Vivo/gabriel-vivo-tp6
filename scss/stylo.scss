@@ -2,7 +2,7 @@
 
 // INCLUYENDO MIXIN //
 
-@mixin bodyyy($colorLetra, $tamanoTexto) {
+@mixin body($colorLetra, $tamanoTexto) {
   color: $colorTexto;
   font-size: $tamanoTexto;
 }
@@ -36,7 +36,7 @@ header {
         gap: 30px;
         a {
           //color: whitesmoke !important;
-          @include bodyyy($colorTexto, 24px); //APLICANDO MIXIN
+          @include body($colorTexto, 24px); //APLICANDO MIXIN
         }
       }
     }
@@ -44,7 +44,10 @@ header {
 }
 
 main {
-  background-color: map-get($mapacolores , 1 )                             //$colorMain; // APLICANDO VARIABLE //
+  background-color: map-get(
+    $mapacolores,
+    1
+  ); //$colorMain; // APLICANDO VARIABLE //
 }
 
 .main-index {
@@ -89,7 +92,7 @@ footer {
       ul {
         list-style-type: none;
         li {
-          @include bodyyy($colorTexto, 24px) //aplicando mixin //
+          @include body($colorTexto, 24px) //aplicando mixin //
 ;
         }
       }
