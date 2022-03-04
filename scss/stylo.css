@@ -1,3 +1,39 @@
+main {
+  background-color: #E9D431;
+}
+
+.main, .main-index, .main-bebidas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E9D431;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+}
+
+.main-index {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-index .banner img {
+  width: 600px;
+}
+
+.main-index iframe {
+  width: 450px;
+  height: 250px;
+  border: 6px solid black;
+}
+
+.main-bebidas {
+  display: block;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,34 +70,6 @@ header .container-fluid .collapse .navbar-nav {
 header .container-fluid .collapse .navbar-nav a {
   color: white;
   font-size: 24px;
-}
-
-main {
-  background-color: #E9D431;
-}
-
-.main-index {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-color: #E9D431;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-index .banner img {
-  width: 600px;
-}
-
-.main-index iframe {
-  width: 450px;
-  height: 250px;
-  border: 6px solid black;
 }
 
 footer {

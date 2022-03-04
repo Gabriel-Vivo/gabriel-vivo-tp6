@@ -1,0 +1,36 @@
+main {
+  background-color: map-get(
+    $mapacolores,
+    1
+  ); //$colorMain; // APLICANDO VARIABLE //
+}
+
+.main {
+  display: flex;
+  background-color: $colorMain;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+}
+
+.main-index {
+  @extend .main;
+  justify-content: space-around;
+  align-items: center;
+
+  .banner {
+    img {
+      width: 600px;
+    }
+  }
+  iframe {
+    width: 450px;
+    height: 250px;
+    border: $bordes; //APLICANDO VARIABLE  //
+  }
+}
+
+.main-bebidas {
+  @extend .main;
+  display: block;
+}

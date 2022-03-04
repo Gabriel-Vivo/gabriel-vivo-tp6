@@ -1,4 +1,5 @@
 @import "variable";
+@import "main";
 
 // INCLUYENDO MIXIN //
 
@@ -43,32 +44,32 @@ header {
   }
 }
 
-main {
-  background-color: map-get(
-    $mapacolores,
-    1
-  ); //$colorMain; // APLICANDO VARIABLE //
-}
+// main {
+//   background-color: map-get(
+//     $mapacolores,
+//     1
+//   ); //$colorMain; // APLICANDO VARIABLE //
+// }
 
-.main-index {
-  display: flex;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-color: $colorMain;
-  justify-content: space-around;
-  align-items: center;
+// .main-index {
+//   display: flex;
+//   margin-top: 3rem;
+//   margin-bottom: 3rem;
+//   background-color: $colorMain;
+//   justify-content: space-around;
+//   align-items: center;
 
-  .banner {
-    img {
-      width: 600px;
-    }
-  }
-  iframe {
-    width: 450px;
-    height: 250px;
-    border: $bordes; //APLICANDO VARIABLE  //
-  }
-}
+//   .banner {
+//     img {
+//       width: 600px;
+//     }
+//   }
+//   iframe {
+//     width: 450px;
+//     height: 250px;
+//     border: $bordes; //APLICANDO VARIABLE  //
+//   }
+// }
 
 footer {
   // background-color: $col-header-footer;

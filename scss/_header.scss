@@ -1,0 +1,25 @@
+header {
+  //background-color: $col-header-footer;
+
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
+  width: 100%;
+  .container-fluid {
+    font-size: 24px;
+    .navbar-toggler-icon {
+      background-color: whitesmoke;
+    }
+
+    .collapse {
+      justify-content: flex-end !important;
+
+      .navbar-nav {
+        gap: 30px;
+        a {
+          //color: whitesmoke !important;
+          @include body($colorTexto, 24px); //APLICANDO MIXIN
+        }
+      }
+    }
+  }
+}
