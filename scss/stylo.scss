@@ -1,12 +1,14 @@
 @import "variable";
+@import "header";
 @import "main";
+@import "footer";
 
 // INCLUYENDO MIXIN //
 
-@mixin body($colorLetra, $tamanoTexto) {
-  color: $colorTexto;
-  font-size: $tamanoTexto;
-}
+// @mixin body($colorLetra, $tamanoTexto) {
+//   color: $colorTexto;
+//   font-size: $tamanoTexto;
+// }
 
 // FIN DEL MIXIN //
 
@@ -18,31 +20,31 @@ body {
   background-color: $colorMain; // APLICANDO VARIABLES //
 }
 
-header {
-  //background-color: $col-header-footer;
+// header {
+//   //background-color: $col-header-footer;
 
-  background-image: url(../imagenes/pixeles.jpg);
-  background-size: cover;
-  width: 100%;
-  .container-fluid {
-    font-size: 24px;
-    .navbar-toggler-icon {
-      background-color: whitesmoke;
-    }
+//   background-image: url(../imagenes/pixeles.jpg);
+//   background-size: cover;
+//   width: 100%;
+//   .container-fluid {
+//     font-size: 24px;
+//     .navbar-toggler-icon {
+//       background-color: whitesmoke;
+//     }
 
-    .collapse {
-      justify-content: flex-end !important;
+//     .collapse {
+//       justify-content: flex-end !important;
 
-      .navbar-nav {
-        gap: 30px;
-        a {
-          //color: whitesmoke !important;
-          @include body($colorTexto, 24px); //APLICANDO MIXIN
-        }
-      }
-    }
-  }
-}
+//       .navbar-nav {
+//         gap: 30px;
+//         a {
+//           //color: whitesmoke !important;
+//           @include body($colorTexto, 24px); //APLICANDO MIXIN
+//         }
+//       }
+//     }
+//   }
+// }
 
 // main {
 //   background-color: map-get(
@@ -71,70 +73,70 @@ header {
 //   }
 // }
 
-footer {
-  // background-color: $col-header-footer;
+// footer {
+//   // background-color: $col-header-footer;
 
-  background-image: url(../imagenes/pixeles.jpg);
-  background-size: cover;
-  .flex-1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    .sucursal {
-      text-align: center;
-      margin-top: 1rem;
-      h2 {
-        color: map-get($mapacolores, 2); //aplicando map-get//
-        border: 2px solid;
-        border-radius: 15px;
-        margin-left: 3rem;
-      }
-      ul {
-        list-style-type: none;
-        li {
-          @include body($colorTexto, 24px) //aplicando mixin //
-;
-        }
-      }
-    }
-    .imagen-footer {
-      width: 100px;
-      margin-left: 0;
-      animation-name: girar;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-    }
-    @keyframes girar {
-      0% {
-        transform: rotate(72deg);
-      }
+//   background-image: url(../imagenes/pixeles.jpg);
+//   background-size: cover;
+//   .flex-1 {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     text-align: center;
+//     .sucursal {
+//       text-align: center;
+//       margin-top: 1rem;
+//       h2 {
+//         color: map-get($mapacolores, 2); //aplicando map-get//
+//         border: 2px solid;
+//         border-radius: 15px;
+//         margin-left: 3rem;
+//       }
+//       ul {
+//         list-style-type: none;
+//         li {
+//           @include body($colorTexto, 24px) //aplicando mixin //
+// ;
+//         }
+//       }
+//     }
+//     .imagen-footer {
+//       width: 100px;
+//       margin-left: 0;
+//       animation-name: girar;
+//       animation-duration: 3s;
+//       animation-iteration-count: infinite;
+//     }
+//     @keyframes girar {
+//       0% {
+//         transform: rotate(72deg);
+//       }
 
-      25% {
-        transform: rotate(144deg);
-      }
+//       25% {
+//         transform: rotate(144deg);
+//       }
 
-      50% {
-        transform: rotate(216deg);
-      }
-      75% {
-        transform: rotate(288deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    .iconos {
-      img {
-        width: 50px;
-        margin-right: 10px;
-        &:hover {
-          transform: scale(1.2, 1.2);
-        }
-      }
-    }
-  }
-}
+//       50% {
+//         transform: rotate(216deg);
+//       }
+//       75% {
+//         transform: rotate(288deg);
+//       }
+//       100% {
+//         transform: rotate(360deg);
+//       }
+//     }
+//     .iconos {
+//       img {
+//         width: 50px;
+//         margin-right: 10px;
+//         &:hover {
+//           transform: scale(1.2, 1.2);
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 420px) {
   .main-index {

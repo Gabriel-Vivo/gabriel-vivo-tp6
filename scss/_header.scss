@@ -1,3 +1,8 @@
+@mixin body($colorLetra, $tamanoTexto) {
+  color: $colorTexto;
+  font-size: $tamanoTexto;
+}
+
 header {
   //background-color: $col-header-footer;
 
@@ -6,6 +11,9 @@ header {
   width: 100%;
   .container-fluid {
     font-size: 24px;
+    img {
+      width: 150px;
+    }
     .navbar-toggler-icon {
       background-color: whitesmoke;
     }
@@ -15,9 +23,9 @@ header {
 
       .navbar-nav {
         gap: 30px;
+
         a {
-          //color: whitesmoke !important;
-          @include body($colorTexto, 24px); //APLICANDO MIXIN
+          color: whitesmoke !important;
         }
       }
     }

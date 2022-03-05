@@ -1,8 +1,40 @@
+header {
+  background-image: url(../imagenes/pixeles.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+header .container-fluid {
+  font-size: 24px;
+}
+
+header .container-fluid img {
+  width: 150px;
+}
+
+header .container-fluid .navbar-toggler-icon {
+  background-color: whitesmoke;
+}
+
+header .container-fluid .collapse {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+header .container-fluid .collapse .navbar-nav {
+  gap: 30px;
+}
+
+header .container-fluid .collapse .navbar-nav a {
+  color: whitesmoke !important;
+}
+
 main {
   background-color: #E9D431;
 }
 
-.main, .main-index, .main-bebidas {
+.main, .main-index, .main-bebidas, main, .main-contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,42 +66,139 @@ main {
   display: block;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+.main-bebidas #contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  text-align: center;
+  /*background-image: url("fondos gaseosas/fondo1.jpg");
+    background-size: cover;*/
+  background-color: #e9d431;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-body {
-  background-color: #E9D431;
+.main-bebidas #contenedor h3 {
+  margin-top: 1rem;
 }
 
-header {
-  background-image: url(../imagenes/pixeles.jpg);
-  background-size: cover;
+.main-bebidas #contenedor div {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 1rem;
+  width: 250px;
+  background-color: #e9d431;
+}
+
+.main-bebidas #contenedor div:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  background-color: #7e710e;
+}
+
+.main-bebidas #contenedor div img {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.main-bebidas #contenedor div button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9d431 !important;
+  border: 3px solid #000 !important;
+  color: #000 !important;
+}
+
+.card {
+  width: 300px !important;
+  background-color: #e9d431;
+  border: 0;
+  text-align: center;
+  margin: 3rem !important;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  background-color: #7e710e;
+}
+
+.card img {
+  margin-left: 15%;
+  width: 200px !important;
+  padding: 1rem;
+}
+
+.card button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9d431 !important;
+  border: 3px solid #000 !important;
+  color: #000 !important;
+}
+
+main #ubicacionFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #ubicacionFlex h2 {
+  margin-top: 2rem;
+  color: #000;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.main-contacto {
+  display: block;
+}
+
+.main-contacto #centrarFormulario {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header .container-fluid {
-  font-size: 24px;
+.main-contacto #centrarFormulario .contacto {
+  border: 3px solid black;
+  width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: gainsboro;
 }
 
-header .container-fluid .navbar-toggler-icon {
-  background-color: whitesmoke;
-}
-
-header .container-fluid .collapse {
-  -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: flex-end !important;
-}
-
-header .container-fluid .collapse .navbar-nav {
-  gap: 30px;
-}
-
-header .container-fluid .collapse .navbar-nav a {
-  color: white;
-  font-size: 24px;
+.main-contacto #centrarFormulario .contacto button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #e9d431 !important;
+  border: 3px solid #000 !important;
+  color: #000 !important;
 }
 
 footer {
@@ -111,7 +240,6 @@ footer .flex-1 .sucursal ul li {
 }
 
 footer .flex-1 .imagen-footer {
-  width: 100px;
   margin-left: 0;
   -webkit-animation-name: girar;
           animation-name: girar;
@@ -119,6 +247,10 @@ footer .flex-1 .imagen-footer {
           animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+footer .flex-1 .imagen-footer img {
+  width: 120px;
 }
 
 @-webkit-keyframes girar {
@@ -175,6 +307,15 @@ footer .flex-1 .iconos img {
 footer .flex-1 .iconos img:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E9D431;
 }
 
 @media (max-width: 420px) {
