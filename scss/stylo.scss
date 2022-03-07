@@ -1,5 +1,6 @@
-@import "variable";
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+@import "variable";
 * {
   padding: 0;
   margin: 0;
@@ -13,5 +14,4 @@ body {
 @import "header";
 @import "main";
 @import "footer";
-
 @import "media";
