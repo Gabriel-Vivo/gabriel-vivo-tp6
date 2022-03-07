@@ -134,7 +134,7 @@ main {
   background-color: #e9d431;
   border: 0;
   text-align: center;
-  margin: 3rem !important;
+  margin-left: 1.5rem;
   font-size: 16px;
 }
 
@@ -407,7 +407,7 @@ footer .flex-1 .iconos img:hover {
     color: black;
   }
   .card img {
-    margin-left: 18%;
+    margin-left: 16.5%;
   }
   #centrarFormulario {
     padding: 1rem;
