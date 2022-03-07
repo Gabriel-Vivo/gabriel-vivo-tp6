@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #E9D431;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 header {
   background-image: url(../imagenes/pixeles.jpg);
   background-size: cover;
@@ -198,6 +208,7 @@ main #ubicacionFlex h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: gainsboro;
+  text-align: center;
 }
 
 .main-contacto #centrarFormulario .contacto button {
@@ -316,31 +327,94 @@ footer .flex-1 .iconos img:hover {
           transform: scale(1.2, 1.2);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #E9D431;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 @media (max-width: 420px) {
+  .flex-1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+  }
+  .flex-1 .imagen-footer {
+    display: none;
+  }
+  .flex-1 .iconos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .main-index {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-right: 150px;
   }
   .main-index .banner img {
     width: 250px;
     margin-bottom: 35px;
   }
-  .main-index iframe {
+  .main-index .video {
     width: 225px;
     height: 125px;
   }
+  .main-bebidas {
+    display: block;
+  }
+  .main-bebidas #contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-bebidas #contenedor div {
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+  .main-bebidas #contenedor div img {
+    width: 100px;
+    margin-top: 5px;
+  }
+  .main-bebidas #contenedor div button {
+    margin-top: 12px;
+  }
+  .card {
+    text-align: center;
+    background-color: #e9d431;
+    color: black;
+  }
+  .card img {
+    margin-left: 18%;
+  }
+  #centrarFormulario {
+    padding: 1rem;
+  }
   .mapa {
-    width: 100%;
-    height: 230px;
+    width: 350px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=stylo.css.map */

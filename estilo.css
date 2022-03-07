@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
-@media screen and (max-width: 420px) {
-  .carrousel {
+@media screen and (max-width: 420px) { */
+/* .carrousel {
     width: 300px;
   }
   #cajaFlex,
@@ -19,8 +19,8 @@
     width: 250px;
     height: 250px;
     margin-left: 30%;
-  }
-
+  } */
+/* 
   .imagen-footer {
     display: none;
   }
@@ -28,10 +28,10 @@
   .sucursal {
     text-align: justify;
     margin-top: 10px;
-  }
+  } */
 
-  /*PAGINA BEBIDAS */
-
+/*PAGINA BEBIDAS */
+/* 
   #contenedor {
     display: grid;
     grid-template-columns: auto;
@@ -55,9 +55,10 @@
   button {
     margin-top: 12px;
   }
+   */
 
-  /*PAGINA HAMBURGUESA */
-  /*
+/*PAGINA HAMBURGUESA */
+/*
 
   .fotos {
     grid-template-columns: auto;
@@ -69,14 +70,8 @@
     
   }
 */
-  .card {
-    text-align: center;
 
-    background-color: #e9d431;
-    color: black;
-  }
-
-  .card img {
+/* .card img {
     margin-left: 25%;
   }
 
@@ -93,20 +88,15 @@
     display: none;
   }
   */
-  /*PAGINA UBICAION */
 
-  .mapa {
+/*PAGINA UBICAION */
+
+/* .mapa {
     width: 100%;
     height: 230px;
   }
   .informacion {
     margin-top: 2rem;
-  }
+  } */
 
-  /*PAGINA CONTACTO*/
-  .contacto {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 300px;
-  }
-}
+/*PAGINA CONTACTO*/
