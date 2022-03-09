@@ -1,0 +1,165 @@
+main {
+  background-color: map-get(
+    $mapacolores,
+    1
+  ); //$colorMain; // APLICANDO VARIABLE //
+}
+
+.main {
+  display: flex;
+  background-color: $colorMain;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+}
+
+.main-index {
+  @extend .main;
+  justify-content: space-around;
+  align-items: center;
+
+  .banner {
+    img {
+      width: 600px;
+    }
+  }
+  iframe {
+    width: 450px;
+    height: 250px;
+    border: $bordes; //APLICANDO VARIABLE  //
+  }
+}
+
+//PAGINA BEBIDAS //
+
+.main-bebidas {
+  @extend .main;
+  display: block;
+  #contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    /*background-image: url("fondos gaseosas/fondo1.jpg");
+    background-size: cover;*/
+    background-color: #e9d431;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h3 {
+      margin-top: 1rem;
+    }
+
+    div {
+      transition: 1s;
+
+      margin-bottom: 1rem;
+      width: 250px;
+      background-color: #e9d431;
+
+      &:hover {
+        transform: scale(0.9, 0.9);
+        background-color: #7e710e;
+      }
+
+      img {
+        width: 150px;
+        margin-top: 5px;
+      }
+
+      button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #e9d431 !important;
+        border: 3px solid #000 !important;
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+//PAGINA HAMBURGUESA//
+
+.card {
+  width: 300px !important;
+  background-color: #e9d431;
+  border: 0;
+  text-align: center;
+  // margin: 3rem !important;
+  margin-left: 1.5rem;
+  font-size: 16px;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 400ms;
+    background-color: #7e710e;
+  }
+
+  img {
+    margin-left: 15%;
+    width: 200px !important;
+    padding: 1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #e9d431 !important;
+    border: 3px solid #000 !important;
+    color: #000 !important;
+  }
+}
+
+//PAGINA UBICACION//
+
+main {
+  @extend .main;
+  display: block;
+
+  #ubicacionFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 2rem;
+      color: #000;
+      border: 2px solid;
+      border-radius: 15px;
+    }
+  }
+}
+
+//PAGINA CONTACTO//
+
+.main-contacto {
+  @extend .main;
+  display: block;
+
+  #centrarFormulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .contacto {
+      border: 3px solid black;
+      width: 500px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      background-color: gainsboro;
+      text-align: center;
+
+      button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #e9d431 !important;
+        border: 3px solid #000 !important;
+        color: #000 !important;
+      }
+    }
+  }
+}
